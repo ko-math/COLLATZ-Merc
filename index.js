@@ -9,9 +9,9 @@ for(let i = MIN; i <= MAX;i++){
   if(merc == tmp[0]){
     numList.push(i);
     avg += tmp[1];
+    if(tmp[1] > MAXMIN[0]) MAXMIN[0] = tmp[1];
+    if(tmp[1] < MAXMIN[1]) MAXMIN[1] = tmp[1];
   }
-  if(tmp[1] > MAXMIN[0]) MAXMIN[0] = tmp[1];
-  if(tmp[1] < MAXMIN[1]) MAXMIN[1] = tmp[1];
 }
 alert(`
 2の冪:${merc}
