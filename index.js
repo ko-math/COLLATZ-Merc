@@ -19,7 +19,7 @@ alert(`
 
 function calc(n){
   let i = n;
-  let max = 0;
+  let max = n;
   let Merc = 0;
   while(i !== 1){
     i = ((i % 2 === 0)?(i / 2):(3 * i + 1) / 2);
