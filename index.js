@@ -4,7 +4,7 @@ const merc = 1;
 const numList = [];
 let avg = 0;
 for(let i = MIN; i <= MAX;i++){
-  const tmp = max(i);
+  const tmp = calc(i);
   if(merc == tmp[0]){
     numList.push(i);
   }
@@ -17,7 +17,7 @@ alert(`
 最大値の平均:${avg / numList.length}
 `);
 
-function max(n){
+function calc(n){
   let i = n;
   let max = 0;
   let Merc = 0;
