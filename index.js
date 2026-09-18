@@ -12,9 +12,9 @@ for(let i = MIN; i <= MAX;i++){
 }
 alert(`
 2の冪:${merc}
-数字群:${numList}
 数字の個数:${numList.length}
 最大値の平均:${avg / numList.length}
+数字群:${numList}
 `);
 
 function calc(n){
