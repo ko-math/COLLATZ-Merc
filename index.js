@@ -7,8 +7,8 @@ for(let i = MIN; i <= MAX;i++){
   const tmp = calc(i);
   if(merc == tmp[0]){
     numList.push(i);
+    avg += tmp[1];
   }
-  avg += tmp[1];
 }
 alert(`
 2の冪:${merc}
