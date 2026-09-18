@@ -1,4 +1,21 @@
-alert(max(5));
+const MIN = 1;
+const MAX = 1000;
+const merc = 1;
+const numList = [];
+let avg = 0;
+for(let i = MIN; i <= MAX;i++){
+  const tmp = max(i);
+  if(merc == tmp[0]){
+    numList.push(i);
+  }
+  avg += tmp[1];
+}
+alert(`
+2の冪:${merc}
+数字群:${numList}
+数字の個数:${numList.length}
+最大値の平均:${avg / numList.length}
+`);
 
 function max(n){
   let i = n;
@@ -11,7 +28,7 @@ function max(n){
       if(fraction(i + 1))Merc ++;
     }
   }
-  return Merc;
+  return [Merc,max];
 }
 function fraction(x) {
   if (!(Number.isFinite(x) && x !== 0)) return null;
