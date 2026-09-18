@@ -2,6 +2,7 @@ const MIN = 1;
 const MAX = 1000;
 const merc = 1;
 const numList = [];
+const MAXMIN = [0,0];
 let avg = 0;
 for(let i = MIN; i <= MAX;i++){
   const tmp = calc(i);
@@ -9,6 +10,8 @@ for(let i = MIN; i <= MAX;i++){
     numList.push(i);
     avg += tmp[1];
   }
+  if(tmp[1] > MAXMIN[0]) MAXMIN[0] = tmp[1];
+  if(tmp[1] < MAXMIN[1]) MAXMIN[1] = tmp[1];
 }
 alert(`
 2の冪:${merc}
